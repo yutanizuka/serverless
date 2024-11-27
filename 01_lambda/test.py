@@ -1,6 +1,6 @@
 import requests
-
-API_URL = 'https://XXXXXXXXX.execute-api.ap-northeast-1.amazonaws.com/test'
+import os
+API_URL = os.environ['VITE_API_URL']
 PARAMS = {
     'key1': 'value1',
     'key2': 'value2'
